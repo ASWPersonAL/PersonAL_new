@@ -32,6 +32,7 @@ import javafx.scene.control.DatePicker;
 
 import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
+import javafx.scene.control.TextField;
 import javafx.scene.text.Text;
 
 /**
@@ -103,6 +104,19 @@ public class FXMLDocumentController implements Initializable {
     private void handleButtonAction(ActionEvent event) {
         System.out.println("You clicked me!");
         label.setText("Hello World!");
+          
+    }
+    
+    //Code for baseline Input
+    
+    @FXML
+    private TextField newBaseline_Value;
+   
+    
+     @FXML
+    private void handleButtonActionBL(ActionEvent event) {
+        
+          //Insert new value in DB method here!
           
     }
     
@@ -218,6 +232,9 @@ public class FXMLDocumentController implements Initializable {
         catch (SQLException ex){
             Logger.getLogger(PersonAL.class.getName()).log(Level.SEVERE, null, ex);
         }
+        
+        
+        
         
   }    
     
